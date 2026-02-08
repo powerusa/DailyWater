@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Xcode
+iOS/DailyWater.xcodeproj/xcuserdata/
+iOS/DailyWater.xcodeproj/project.xcworkspace/xcuserdata/
+iOS/*.xcuserstate
+iOS/build/
+DerivedData/
+
+# Android
+Android/.gradle/
+Android/build/
+Android/app/build/
+Android/local.properties
+Android/.idea/
+Android/captures/
+Android/app/*.apk
+Android/app/output/
+*.hprof
+
+# Misc
+*.log
+.env
