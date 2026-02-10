@@ -2,7 +2,9 @@ package com.watercamel
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -33,6 +35,21 @@ class MainActivity : ComponentActivity() {
             val isDarkModeSet by waterViewModel.isDarkModeSet.collectAsState()
             val systemDark = isSystemInDarkTheme()
             val effectiveDark = if (isDarkModeSet) isDarkMode else systemDark
+
+            androidx.compose.runtime.LaunchedEffect(effectiveDark) {
+                enableEdgeToEdge(
+                    statusBarStyle = if (effectiveDark) {
+                        SystemBarStyle.dark(android.graphics.Color.TRANSPARENT)
+                    } else {
+                        SystemBarStyle.light(android.graphics.Color.TRANSPARENT, android.graphics.Color.TRANSPARENT)
+                    },
+                    navigationBarStyle = if (effectiveDark) {
+                        SystemBarStyle.dark(android.graphics.Color.TRANSPARENT)
+                    } else {
+                        SystemBarStyle.light(android.graphics.Color.TRANSPARENT, android.graphics.Color.TRANSPARENT)
+                    }
+                )
+            }
 
             DailyWaterTheme(darkTheme = effectiveDark) {
                 Surface(
