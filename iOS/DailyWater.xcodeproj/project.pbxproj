@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A98F36F52F38D82800C567AE /* DailyWater Watch App.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = "DailyWater Watch App.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA00000100000000000000A1 /* DailyWaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWaterApp.swift; sourceTree = "<group>"; };
 		AA00000100000000000000A2 /* IntakeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeEntry.swift; sourceTree = "<group>"; };
 		AA00000100000000000000A3 /* WaterStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterStorage.swift; sourceTree = "<group>"; };
@@ -37,7 +38,28 @@
 		AA00000100000000000000B0 /* DailyWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A98F36FC2F38D82800C567AE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A98F36F42F38D82800C567AE /* DailyWater Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A98F36F62F38D82800C567AE /* DailyWater Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A98F36FC2F38D82800C567AE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "DailyWater Watch App"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		A98F36F22F38D82800C567AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA00000100000000000000C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AA00000100000000000000D1 /* DailyWater */,
+				A98F36F62F38D82800C567AE /* DailyWater Watch App */,
 				AA00000100000000000000D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				AA00000100000000000000B0 /* DailyWater.app */,
+				A98F36F52F38D82800C567AE /* DailyWater Watch App.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +150,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A98F36F42F38D82800C567AE /* DailyWater Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98F36FD2F38D82800C567AE /* Build configuration list for PBXNativeTarget "DailyWater Watch App" */;
+			buildPhases = (
+				A98F36F12F38D82800C567AE /* Sources */,
+				A98F36F22F38D82800C567AE /* Frameworks */,
+				A98F36F32F38D82800C567AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A98F36F62F38D82800C567AE /* DailyWater Watch App */,
+			);
+			name = "DailyWater Watch App";
+			packageProductDependencies = (
+			);
+			productName = "DailyWater Watch App";
+			productReference = A98F36F52F38D82800C567AE /* DailyWater Watch App.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		AA00000100000000000000E0 /* DailyWater */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA00000100000000000000F2 /* Build configuration list for PBXNativeTarget "DailyWater" */;
@@ -150,9 +196,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					A98F36F42F38D82800C567AE = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					AA00000100000000000000E0 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -172,11 +221,19 @@
 			projectRoot = "";
 			targets = (
 				AA00000100000000000000E0 /* DailyWater */,
+				A98F36F42F38D82800C567AE /* DailyWater Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A98F36F32F38D82800C567AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA00000100000000000000E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +245,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A98F36F12F38D82800C567AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA00000100000000000000E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +273,75 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A98F36FE2F38D82800C567AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RG6E263GKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DailyWater Watch App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DailyWater Watch App";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.powersatellite.DailyWater-Watch-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		A98F36FF2F38D82800C567AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RG6E263GKB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DailyWater Watch App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DailyWater Watch App";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.powersatellite.DailyWater-Watch-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
 		AA00000100000000000000F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -244,6 +377,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RG6E263GKB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -266,6 +400,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -306,6 +441,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RG6E263GKB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -320,6 +456,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -332,7 +469,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RG6E263GKB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -361,7 +497,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RG6E263GKB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -386,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A98F36FD2F38D82800C567AE /* Build configuration list for PBXNativeTarget "DailyWater Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98F36FE2F38D82800C567AE /* Debug */,
+				A98F36FF2F38D82800C567AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA00000100000000000000F0 /* Build configuration list for PBXProject "DailyWater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

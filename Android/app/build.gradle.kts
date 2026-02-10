@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dailywater"
+    namespace = "com.watercamel"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.dailywater"
+        applicationId = "com.watercamel"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

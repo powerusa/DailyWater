@@ -5,12 +5,12 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-dependencyResolution {
+dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
     }
 }
 
-rootProject.name = "DailyWater"
+rootProject.name = "WaterCamel"
 include(":app")
